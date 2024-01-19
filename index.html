@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Click Rumy</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/rumy.png" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./assets/images/logoZelda.webp" width="150" alt="logo Zelda">
+        </div>
+        <div>
+            <p>Bienvenue dans le jeu du Click Rumy</p>
+        </div>
+    </header>
+    <main>
+        <div class="game">
+            <div id="gameContainer">
+                <div class="result">
+                    <div class="timer">
+                        <p>Time </p>
+                        <div id="borderTimer">
+                            <div class="time">
+                                <p id="time"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="result">
+                        <p>Score :</p>
+                        <p class="point"></p>
+                        <div>
+                            <img src="./assets/images/rubis.png" width="20" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gameOver">Game Over</div>
+                <div>
+                    <button onclick="start()" class="button">Commencer</button>
+                </div>
+                <div>
+                    <img class="rumy" src="./assets/images/rumy.png" width="100" alt="rumy">
+                </div>
+            </div>
+            <div id="rulesContainer">
+                <div id="textRules">
+                    <p> Regles du jeu :</p>
+                    <p>Dans ce jeu, tu incarnes Link</p>
+                    <p>Tu dois tirer des fleches sur Rumy</p>
+                    <p>afin d'obtenir le plus de rubis en 1 Minutes !</p>
+                    <div class="explanation">
+                        <p>Comment Jouer ?</p>
+                        <div class="firstRules">
+                            <p>Il faut cliquer sur </p>
+                            <div>
+                                <img src="./assets/images/rumy.png" width="35" alt="Rumy">
+                            </div>
+                        </div>
+                        <div class="firstRules">
+                            <p>Pour Obtenir des </p>
+                            <div>
+                                <img src="./assets/images/rubis.png" width="25" alt="Rubis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
